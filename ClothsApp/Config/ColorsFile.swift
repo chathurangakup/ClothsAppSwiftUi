@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+import SwiftUI
+
+extension Color {
+    static let customBlack = Color("black")
+}

@@ -7,14 +7,23 @@
 
 import SwiftUI
 
-struct LoginScreenViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class LoginScreenViewModel: ObservableObject{
+    @Published var email : String = ""
+    @Published var password : String = ""
+    @Published var showPassword : Bool = false
+    @Published var registerUser : Bool = false
+    
+    @Published var re_Enter_password: String = ""
+    @Published var showEnterPassword: Bool = false
+    
+    func Login() {
+        
     }
-}
-
-struct LoginScreenViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginScreenViewModel()
-    }
+    
+    func Register(){}
+    
+    func fogertPassword(){} 
+    
+    
+    
 }
